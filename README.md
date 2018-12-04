@@ -30,15 +30,15 @@ There are several rules to follow when you are working with partial class defini
 4. All partial-type definitions meant to be parts of the same type must be defined in the same assembly and the same module (.exe or .dll file). Partial definitions cannot span multiple modules.
 5. The class name and generic-type parameters must match on all partial-type definitions. Generic types can be partial. Each partial declaration must use the same parameter names in the same order.
 6. The following keywords on a partial-type definition are optional, but if present on one partial-type definition, cannot conflict with the keywords specified on another partial definition for the same type:
-    a. public
-    b. private
-    c. protected
-    d. internal
-    e. abstract
-    f. sealed
-    g. base class
-    h. new modifier (nested parts)
-    i. generic constraints
+   - public
+   - private
+   - protected
+   - internal
+   - abstract
+   - sealed
+   - base class
+   - new modifier (nested parts)
+   - generic constraints
 
 ## Partial Method
 A partial class or struct may contain a partial method. One part of the class contains the signature of the method. An optional implementation may be defined in the same part or another part. If the implementation is not supplied, then the method and all calls to the method are removed at compile time.
